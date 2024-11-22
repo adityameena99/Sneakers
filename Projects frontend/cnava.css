@@ -1,0 +1,764 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}html,body{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 100%;
+    cursor: none;
+    /* overflow: hidden; */
+}#loader{
+    position: absolute;
+    z-index: 99999;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}#loader h4{
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    z-index: 9999999;
+    color: black;
+    font-family:"Gilroy";
+    font-size: 50px;
+}
+#nav{
+    position: absolute;
+    z-index: 99;
+    top: 5%;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    padding: 50px 60px;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rebeccapurple; */
+}#nav img{
+    width: 150px;
+}#nav button{
+    padding: 15px 50px;
+    color: white;
+    border: none;
+    font-family: "Gilroy";
+    font-size: 20px;
+    border-radius: 100px;
+    background-color: rgb(86, 104, 86);
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+    min-width: 100vw;
+    min-height: 100vh;
+}#page1{
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #EBEBE8;
+}#shoes{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#shoe>img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-position: center; */
+    object-fit: cover;
+    object-position: center;
+}#img{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    top: -0.4%;
+    height: 100%;
+    z-index: 99999;
+    border: none;
+    /* background-color: rebeccapurple; */
+}#img>img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    object-position: center;
+    z-index: 0;
+    position: relative;
+}.scroll-prompt {
+	position: absolute;
+    top: 65%;
+	z-index: 9999;
+	bottom: -80px;
+	left: 50%;
+	margin-left: -80px;
+	width: 100px;
+	height: 100px;
+
+	.scroll-prompt-arrow-container {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -18px;
+		animation-name: bounce;
+		animation-duration: 1.5s;
+		animation-iteration-count: infinite;
+	}
+	.scroll-prompt-arrow {
+		animation-name: opacity;
+		animation-duration: 1.5s;
+		animation-iteration-count: infinite;
+	}
+	.scroll-prompt-arrow:last-child {
+		animation-direction: reverse;
+		margin-top: -6px;
+	}
+	.scroll-prompt-arrow > div {
+		width: 36px;
+		height: 36px;
+		border-right: 8px solid #ffffff;
+		border-bottom: 8px solid #ffffff;
+		transform: rotate(45deg) translateZ(1px);
+	}
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 0.1;
+	}
+
+	20% {
+		opacity: 0.2;
+	}
+
+	30% {
+		opacity: 0.3;
+	}
+
+	40% {
+		opacity: 0.4;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	60% {
+		opacity: 0.6;
+	}
+
+	70% {
+		opacity: 0.7;
+	}
+
+	80% {
+		opacity: 0.8;
+	}
+
+	90% {
+		opacity: 0.9;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+
+	10% {
+		transform: translateY(3px);
+	}
+
+	20% {
+		transform: translateY(6px);
+	}
+
+	30% {
+		transform: translateY(9px);
+	}
+
+	40% {
+		transform: translateY(12px);
+	}
+
+	50% {
+		transform: translateY(15px);
+	}
+
+	60% {
+		transform: translateY(18px);
+	}
+
+	70% {
+		transform: translateY(21px);
+	}
+
+	80% {
+		transform: translateY(24px);
+	}
+
+	90% {
+		transform: translateY(27px);
+	}
+
+	100% {
+		transform: translateY(30px);
+	}
+}
+#line{
+    position: absolute;
+    z-index: 999999;
+    top: 80%;
+    left: 45.3%;
+    width: 100px;
+    height: 2px;
+    opacity: 1;
+    background-color: white;
+    transform: rotate(90deg);
+}h4{
+    position: absolute;
+    top: 86%;
+    left:43%;
+    color: white;
+    font-size: 20px;
+    z-index: 99999999;
+    font-family: "Gilroy";
+}h4>span{
+    position: absolute;
+    top: 90%;
+    left:25%;
+    color: white;
+    font-size: 20px;
+    z-index: 99999999;
+    font-family: "Gilroy"; 
+}
+#page2{
+    position: relative;
+    /* overflow: hidden; */
+    min-width: 100vw;
+    /* z-index: 99; */
+    min-height: 100vh;
+    background-color: rgb(79, 65, 65);
+}#page2>canvas{
+    position: relative;
+    /* z-index: 9; */
+    max-width: 100vw;
+    max-height: 100vh;
+    /* z-index: 9999; */
+}#t1{
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    opacity: 0;
+    z-index: 99999;
+    color: white;
+    font-family: "Gilroy";
+    font-size: 60px;
+    text-align: center;
+    
+}#t1>h5{
+    text-align: left    ;
+}
+#t2{
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    opacity: 0;
+    z-index: 99999;
+    color: white;
+    font-family: "Gilroy";
+    font-size: 60px;
+    text-align: center;
+    
+}#t2>h5{
+    text-align: left    ;
+}
+#t3{
+    position: absolute;
+    top: 70%;
+    left: -10%;
+    opacity: 0;
+    z-index: 99999;
+    color: white;
+    font-family: "Gilroy";
+    font-size: 60px;
+    text-align: center;
+    
+}#t3>h5{
+    text-align: left    ;
+}
+
+#page3{
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}
+.showcase{
+    /* overflow: hidden; */
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    top: -10%;
+    display: flex;
+    /* justify-content: space-between;   */
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+    /* background-color: rebeccapurple; */
+}.slider{
+    width: 100%;
+    position: relative;
+    display: flex;
+  justify-content: space-between;
+    height: 50%;
+    gap: 40px;
+    background-color: white;
+}.slider img{
+    position: relative;
+    left: -23%;
+    width:400px;
+}.slider h1{
+    position: relative;
+    left: -23%;
+    font-family: "Gilroy";
+    font-size: 150px;
+    font-weight: 1;
+}#page4{
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color:  #FFFFFF;
+}.cards{
+    position: absolute;
+    top: 23%;
+    /* margin-top: 200px; */
+    left: 15%;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    height: 500px;
+    /* background-color: #ba9191; */
+}.card h5{
+    position: relative;
+    /* top: -10%; */
+    text-align: center;
+    font-family: "Gilroy";
+    font-size: 15px;
+}#texo{
+    position:absolute;
+    top: -10%;
+    display: flex;
+    gap: 150px;
+    flex-direction: row;
+}
+#texo h1{
+    font-size: 250px;
+    font-weight: 800;
+    font-family: "Gilroy";
+}#h1{
+    color: #b65d5d;
+}#h2{
+    color: rgb(121, 140, 158);
+}
+.card{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    /* background-color: red; */
+}.card img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}#details{
+    position: absolute;
+    top: 75%;
+    left: 8%;
+    width: 1000px;
+    /* height: px; */
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 220px;
+}#details button{
+    background-color: rgb(161, 91, 91);
+    border-radius: 100px;
+    padding: 15px 60px;
+    border: none;
+    font-family: "Gilroy";
+    font-weight: 500;
+    font-size: 20px;
+}
+#page5{
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}#sliders{
+    position: absolute;
+    /* margin-top: 30px; */
+    top: 0%;
+    left: 0%;
+    /* opacity: 0; */
+    overflow: hidden;
+    width: 700px;
+    height: 1000px;
+    background-color: red;
+    
+}#imga{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}#imga>img{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+}#imgb{
+    position: absolute;
+/* z-index: 99; */
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}#imgb>img{
+    /* position: absolute; */
+  
+    width: 100%;
+    height: 100%;
+}#imgc{
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+}#imgc>img{
+    /* position: absolute; */
+
+    width: 100%;
+    height: 100%;
+}#imgd{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+}#imgd>img{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+}#slider2{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 500px;
+    height: 600px;
+    top: 20%;
+    left: 35%; 
+    /* margin-left: 200px; */
+    z-index: 9999999;
+    background-color: rebeccapurple;
+}#imge{
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center;
+    position: relative;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    z-index: 9;
+    height: 100%;
+}#imge>img{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+}#imgf{
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center;
+    position: absolute;
+    right: -50%;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}#imgf>img{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+}#imgg{
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center;
+    position: absolute;
+    right: -50%;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}#imgg>img{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+}
+#left{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 70%;
+    top: 40%;
+    width: 400px;
+}#left img{
+    width: 450px;
+    object-fit: cover;
+    object-position: center;
+}#left h5{
+    position: relative;
+    /* left: 40%; */
+    /* top: -30%; */
+    font-size: 10px;
+    font-family: "Segoe Print";
+    font-weight:    0;
+}#left>#button{
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    /* background-color: red; */
+    font-size: 100px;
+}
+#page6{
+    position: relative;
+    overflow: hidden;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}#z{
+    /* position: fixed; */
+    position: absolute; /* Keeps it in the center during animation */
+      /* top: 50%; */
+      /* left: 50%; */
+      /* transform: translate(-50%, -50%); */
+    width: 450px;
+    overflow: hidden;
+    height: 600px;
+    background-color: rebeccapurple;
+}#z>img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+#z1{
+    /* position: fixed; */
+    position: absolute; /* Keeps it in the center during animation */
+      top: 90%;
+      opacity: 0;
+      /* z-index: 0; */
+      /* left: 36.8%; */
+      /* transform: translate(-50%, -50%); */
+    width: 450px;
+    overflow: hidden;
+    /* transform: translateX(-50%); */
+    height: 600px;
+    background-color: rebeccapurple;
+    /* z-index: 0; */
+}#z1>img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    z-index: 99999;
+}
+#z3 {
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    z-index: 999;
+    visibility: hidden; /* Start hidden inside z1 */
+  }
+  
+  #z3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #z3 #z3-l1, #z3 #z3-l2, #z3 #z3-l3 {
+    position: absolute;
+    text-wrap: nowrap;
+    opacity: 0;
+    font-family: "Gilroy";
+    font-size: 70px;
+    color: white;
+  }
+  
+  #z3 #z3-l1 {
+    top: 0%;
+    left: 3%;
+  }
+  
+  #z3 #z3-l2 {
+    top: 35%;
+    right:0%;
+  }
+  
+  #z3 #z3-l3 {
+    top: 70%;
+    left: 10%;
+  }
+#l1>h1{
+    position: absolute;
+    top: 20%;
+    opacity: 0;
+    z-index: 999;
+    left: 10%;
+   font-family: "Gilroy";
+   font-size: 150px;
+   color: white;
+
+}#l2>h1{
+    position: absolute;
+    top: 40%;
+    opacity: 0;
+    z-index: 999;
+    right: 10%;
+   font-family: "Gilroy";
+   font-size: 150px;
+   color: white;
+   z-index: 99;
+}#l3>h1{
+    position: absolute;
+    top: 60%;
+    opacity: 0;
+    z-index: 999;
+    left:10%;
+   font-family: "Gilroy";
+   font-size: 150px;
+   color: white;
+   z-index: 999;
+}
+#page7 {
+    position: absolute;
+    top: 100%;
+     /* Start off-screen from the right */
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 0, 0); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    cursor: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Make sure it overlaps page6 */
+    opacity: 0; /* Start hidden */
+    transform: translateX(0); /* Ensure it starts off-screen */
+  }
+  #page7>img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+ #page7>#parts{
+    position: absolute;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 70%;
+    gap: 30px;
+    height: 90%;
+    overflow: hidden;
+    /* background-color: #b65d5d; */
+ }
+ #o1{
+    position: relative;
+    width:600px;
+    height: 700px;
+ }#o1 img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+ }#o1:hover{
+    transition:all 1s;
+    scale:1.05
+ }
+ #o2{
+    position: relative;
+    width:600px;
+    height: 700px;
+ }#o2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}#o2:hover{
+    transition:all 1s;
+    scale:1.05
+ }
+#cursor{
+    position: absolute;
+    z-index: 99999;
+    overflow: hidden;
+    top: 0%;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(178, 68, 51);
+    display: flex;
+    justify-content: center;
+    transition: transform 0.1s ease-out;
+    align-items: center;
+    border-radius: 100%;
+        mix-blend-mode: difference;
+}#lo{
+    position: relative;
+    display: flex;
+    gap: 38px;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}#lo>i{
+    font-size: 20px;
+}#mo{
+    position: absolute;
+    z-index: 99999999;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    height: 7px;
+    background-color: rgb(142, 79, 79);
+    /* z-index: ; */
+}
